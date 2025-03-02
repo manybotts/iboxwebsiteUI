@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import MovieCard from "./MovieCard";
-import BACKEND_URL from "./config";
+import BACKEND_URL from "../config"; // ✅ FIXED PATH
 
 const MovieList = ({ category }) => {
   const [items, setItems] = useState([]);
@@ -13,11 +13,4 @@ const MovieList = ({ category }) => {
 
   return (
     <div>
-      {items.map((item) => (
-        <MovieCard key={item.file_id} movie={item} />
-      ))}
-    </div>
-  );
-};
-
-export default MovieList;
+      {items
