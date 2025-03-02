@@ -1,5 +1,6 @@
+import React from "react";
 import { useParams } from "react-router-dom";
-import BACKEND_URL from "./config";
+import BACKEND_URL from "../config"; // ✅ Moves up to src/
 
 const Watch = () => {
   const { file_id } = useParams();
