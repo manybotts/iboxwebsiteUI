@@ -1,5 +1,6 @@
 import React from "react";
-import MovieList from "../components/MovieList";  // ✅ FIXED PATH
+import MovieList from "../components/MovieList";
+import BACKEND_URL from "../config"; // ✅ FIXED PATH
 
 const Home = () => {
   return (
