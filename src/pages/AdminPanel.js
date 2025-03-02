@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import BACKEND_URL from "../config"; // ✅ FIXED PATH
+import BACKEND_URL from "../config"; // ✅ Moves up to src/
 
 const AdminPanel = () => {
   const [movies, setMovies] = useState([]);
