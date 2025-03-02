@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import Home from "./Home";
-import Watch from "./Watch";
-import AdminPanel from "./AdminPanel";
+import Home from "./pages/Home";  // ✅ Ensure the file exists in `pages/Home.js`
+import Watch from "./pages/Watch";
+import AdminPanel from "./pages/AdminPanel";
 
 const App = () => {
   return (
