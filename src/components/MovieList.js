@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import MovieCard from "./MovieCard";
-import BACKEND_URL from "../config"; // ✅ Fixed Path
+import BACKEND_URL from "../config"; // ✅ Moves up to src/
 
 const MovieList = ({ category }) => {
   const [items, setItems] = useState([]);
